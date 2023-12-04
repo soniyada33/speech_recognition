@@ -8,9 +8,9 @@ const port = 3000;
 app.use(bodyParser.json());
 
 // Import CRUD operations from separate files
-const getAllBooksRouter = require("./books/getAllBooks");
-const addNewBookRouter = require("./books/addNewBook");
-const updateBookDetailsRouter = require("./books/updateBookDetails");
+const getAllBooksRouter = require("./app/books/getAllBooks");
+const addNewBookRouter = require("./app/books/addNewBook");
+const updateBookDetailsRouter = require("./app/books/updateBookDetails");
 
 // Use the CRUD operations routers
 app.use(getAllBooksRouter);
